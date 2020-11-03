@@ -30,6 +30,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import hudson.model.View;
+import hudson.security.Permission;
 import jenkins.model.Jenkins;
 import net.bull.javamelody.NodesCollector;
 import net.bull.javamelody.NodesController;
@@ -85,8 +87,8 @@ public class HudsonMonitoringFilter extends PluginMonitoringFilter {
 				return;
 			}
 			if (!PLUGIN_AUTHENTICATION_DISABLED) {
-				// only the Hudson/Jenkins administrator can view the monitoring report
-				Jenkins.getInstance().checkPermission(Jenkins.ADMINISTER);
+				// Only user with VIEW > CONFIGURE permission can view the monitoring report
+				Jenkins.getInstance().checkPermission(View.CONFIGURE);
 			}
 
 			// this check of parameters is not supposed to be needed,

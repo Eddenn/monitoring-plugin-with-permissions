@@ -10,10 +10,10 @@
 	<groupId>org.jvnet.hudson.plugins</groupId>
 	<artifactId>monitoring</artifactId>
 	<packaging>hpi</packaging>
-	<version>1.87.0-SNAPSHOT</version>
-	<name>Monitoring</name>
+	<version>1.87.0-with-permissions</version>
+	<name>Monitoring with permissions</name>
 	<description>Monitoring of Jenkins</description>
-	<url>https://github.com/jenkinsci/monitoring-plugin</url>
+	<url>https://github.com/Eddenn/monitoring-plugin-with-permissions</url>
 	<inceptionYear>2009</inceptionYear>
 
 	<properties>
@@ -23,9 +23,9 @@
 
 	<developers>
 		<developer>
-			<id>evernat</id>
-			<email>evernat@free.fr</email>
-			<name>Emeric Vernat</name>
+			<id>ahazard</id>
+			<email>hazard.alexandre76@gmail.com</email>
+			<name>Alexandre Hazard</name>
 		</developer>
 	</developers>
 	<licenses>
